@@ -5,7 +5,6 @@
 }
 
 body {
-  background-color: #14131a;
   font-family: "Roboto", sans-serif;
   color: #ffffff;
 }
@@ -67,4 +66,63 @@ body {
   color: rgba(255, 255, 255, 0.8);
   max-width: 423px;
   margin-top: 40px;
+}
+
+.button {
+  padding: 15px 30px;
+}
+
+.buttons-group {
+  margin-top: 70px;
+}
+
+.button-primary {
+  background-color: #ffffff;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.play,
+.primary-text {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.primary-text {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #8d0019;
+  margin-left: 10px;
+}
+
+.button-link {
+  text-decoration: none;
+  margin-left: 50px;
+}
+
+.link_to_tickets {
+  margin-left: 10px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+}
+
+.ticket,
+.link_to_tickets {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.ve {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.bd {
+  background: url("../images/bd.png") no-repeat top right,
+    #14131a url("../images/background.jpg") no-repeat center center / 100%;
 }
