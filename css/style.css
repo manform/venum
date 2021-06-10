@@ -186,11 +186,11 @@ body {
   color: rgba(255, 255, 255, 0.8);
 }
 
-.actors {
+.trailer__but {
   max-width: 400px;
 }
 
-.play {
+.trailer__but {
   margin: 0;
 }
 
@@ -224,7 +224,7 @@ body {
   margin-bottom: 30px;
 }
 
-.play {
+.trailer__but {
   width: 45px;
   height: 45px;
   padding: 15px;
