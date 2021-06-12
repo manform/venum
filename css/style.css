@@ -15,6 +15,9 @@ body {
   padding-top: 40px;
   padding-bottom: 80px;
 }
+img {
+  max-width: 100%;
+}
 
 .logo-venom {
   display: inline-block;
@@ -22,7 +25,17 @@ body {
 
 .container {
   margin: auto;
-  max-width: 1140px;
+  /* max-width: 1140px; */
+  width: 90%;
+  margin: auto;
+}
+
+.ve {
+  position: absolute;
+  top: 0;
+  right: 0;
+  max-width: 728px;
+  width: 50%;
 }
 
 .logo-link {
@@ -56,7 +69,7 @@ body {
   font-size: 24px;
   line-height: 28px;
   color: rgba(255, 255, 255, 0.8);
-  margin-bottom: 38px;
+  margin-bottom: 2%;
 }
 
 .film-description {
@@ -65,7 +78,11 @@ body {
   line-height: 140%;
   color: rgba(255, 255, 255, 0.8);
   max-width: 423px;
-  margin-top: 40px;
+  margin-top: 3%;
+}
+
+.film-logo {
+  width: 70%;
 }
 
 .button {
@@ -73,7 +90,7 @@ body {
 }
 
 .buttons-group {
-  margin-top: 70px;
+  margin-top: 5%;
 }
 
 .button-primary {
@@ -99,7 +116,7 @@ body {
 
 .button-link {
   text-decoration: none;
-  margin-left: 50px;
+  margin-left: 1%;
 }
 
 .link_to_tickets {
@@ -116,14 +133,8 @@ body {
   vertical-align: middle;
 }
 
-.ve {
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-
 .bd {
-  background: url("../images/bd.png") no-repeat top right,
+  background: url("../images/bd.png") no-repeat top right / 70%,
     #14131a url("../images/background.jpg") no-repeat center center / 100%;
 }
 
@@ -145,6 +156,7 @@ body {
   line-height: 42px;
   color: rgba(255, 255, 255, 0.8);
   margin-bottom: 20px;
+  margin-top: 0;
 }
 
 .content__text {
@@ -253,4 +265,151 @@ body {
 .poster {
   width: 362px;
   border-radius: 5px;
+}
+
+.menu-buton {
+  display: none;
+}
+.close {
+  display: none;
+}
+@media (max-width: 1024px) {
+  .content {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 5%;
+  }
+
+  .col {
+    margin-bottom: 3%;
+  }
+
+  .header {
+    padding-bottom: 4%;
+  }
+
+  .film {
+    margin-top: 20%;
+  }
+}
+
+@media (max-width: 768px) {
+  .bd {
+    background: #14131a;
+  }
+
+  .ve {
+    top: 10%;
+  }
+}
+
+@media (max-width: 576px) {
+  .ve {
+    top: 20%;
+    width: 30%;
+  }
+  .nav-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ffff;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(100%);
+    transition: transform 0.2s;
+  }
+
+  .nav-link_link {
+    color: #14131a;
+    margin-right: 0;
+  }
+
+  .close {
+    display: flex;
+    position: fixed;
+    top: 65px;
+    right: 25px;
+    align-items: center;
+    z-index: 11;
+    border: none;
+    background: #ffff;
+    cursor: pointer;
+    transform: translateX(300%);
+    transition: transform 0.2s;
+    transition-delay: 0.2s;
+    opacity: 0;
+  }
+
+  .is-active {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  .close__text {
+    margin-right: 10px;
+  }
+
+  .nav-link {
+    margin-bottom: 2%;
+    margin-top: 2%;
+  }
+
+  .nav-bar {
+    margin-left: auto;
+  }
+
+  .menu-buton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border: none;
+    background: #14131a;
+    cursor: pointer;
+    color: #ffff;
+    margin-left: auto;
+  }
+
+  .menu-button__text {
+    margin-right: 10px;
+  }
+
+  .buttons-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .film-text {
+    text-align: center;
+  }
+
+  ._with_poster {
+    flex-direction: column;
+  }
+
+  .poster {
+    margin-bottom: 4%;
+  }
+
+  .content .trailer {
+    max-width: 350px;
+    width: 100%;
+  }
+
+  .poster {
+    margin-right: 0;
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .actors__list {
+    column-count: 1;
+  }
 }
